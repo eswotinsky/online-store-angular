@@ -1,0 +1,11 @@
+.navbar {
+  background-color: darkslategray;
+}
+
+a {
+  color: lightgray;
+}
+
+a:hover {
+  color: cornflowerblue;
+}
