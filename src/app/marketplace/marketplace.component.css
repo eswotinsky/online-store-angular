@@ -1,3 +1,7 @@
 .card-body:hover {
   background-color: cornflowerblue;
 }
+
+h3:hover {
+  cursor: pointer;
+}
