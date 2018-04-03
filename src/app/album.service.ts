@@ -11,16 +11,16 @@ export class AlbumService {
     this.albums = database.list('albums');
   }
 
+  addAlbum(newAlbum: Album) {
+    this.albums.push(newAlbum);
+  }
+
   getAlbums() {
     return this.albums;
   }
 
-  getAlbumById(albumId: number) {
-    for (var i = 0; i < ALBUMS.length; i++) {
-      if (ALBUMS[i].id === albumId) {
-        return ALBUMS[i];
-      }
-    }
+  getAlbumById(albumId: string) {
+    return this.database.object('albums/' + albumId);
   }
 
 }
