@@ -5,3 +5,7 @@
 h3:hover {
   cursor: pointer;
 }
+
+.marketplace-container:last-child {
+  padding-bottom: 5%;
+}
